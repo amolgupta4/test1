@@ -1,0 +1,8 @@
+
+First Name:  <%= @aurthor.first_name %><br>
+Last Name:  <%= @aurthor.last_name %><br>
+DOB: <%= @aurthor.date_of_birth %><br>
+<%= link_to 'Edit', edit_aurthor_path(@aurthor) %> |
+<%= link_to 'Delete', aurthor_path(@aurthor), method: :delete, data: {confirm: "are you sure"} %>
+
+
